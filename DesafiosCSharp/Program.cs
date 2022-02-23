@@ -279,135 +279,130 @@ namespace DesafiosCSharp
             //Console.WriteLine("{0} moeda(s) de R$ 0,01", valor001);
 
             //-------------------- 1035 - Seleção 1 --------------------------------------
-            string[] texto = Console.ReadLine().Split(' ');
-            int A = int.Parse(texto[0]),
-                B = int.Parse(texto[1]),
-                C = int.Parse(texto[2]),
-                D = int.Parse(texto[3]);
+            //string[] texto = Console.ReadLine().Split(' ');
+            //int A = int.Parse(texto[0]),
+            //    B = int.Parse(texto[1]),
+            //    C = int.Parse(texto[2]),
+            //    D = int.Parse(texto[3]);
 
-            if ((B > C) 
-                && (D > A) 
-                && (C + D) > (A + B )
-                && (A > 0 && B > 0 && C > 0 && D > 0 )
-                && (A % 2 == 0)) 
-            { 
-                Console.WriteLine("Valores aceitos"); 
-            }
-            else
+            //if ((B > C) 
+            //    && (D > A) 
+            //    && (C + D) > (A + B )
+            //    && (A > 0 && B > 0 && C > 0 && D > 0 )
+            //    && (A % 2 == 0)) 
+            //{ 
+            //    Console.WriteLine("Valores aceitos"); 
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Valores nao aceitos");
+            //}
+
+            //-------------------- 1035 - Seleção 1 --------------------------------------
+
+            //string[] texto = Console.ReadLine().Split(' ');
+            //double A = double.Parse(texto[0]),
+            //      B = double.Parse(texto[1]),
+            //      C = double.Parse(texto[2]);
+
+            //double delta = Math.Pow(B, 2) - (4 * A * C);
+
+            //if(delta >= 0 && A != 0 )
+            //{
+            //    double R1 = (-B + Math.Sqrt(delta)) / (2 * A);
+            //    double R2 = (-B - Math.Sqrt(delta)) / (2 * A);
+            //    Console.WriteLine($"R1 = {R1.ToString("N5")}\nR2 = {R2.ToString("N5")}");
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("Impossivel calcular");
+            //}
+
+            //-------------------- 1037 - Intervalo --------------------------------------
+
+            //var valor = float.Parse(Console.ReadLine());
+
+
+            //if(valor >= 0.00 && valor <= 25.00)
+            //{
+            //    Console.WriteLine("Intervalo [0,25]");
+            //}
+            //else if (valor > 25.00 && valor <= 50.00)
+            //{ 
+            //    Console.WriteLine("Intervalo (25,50]"); 
+            //}
+            //else if  (valor > 50.00 && valor <= 75.00)
+            //{
+            //    Console.WriteLine("Intervalo (50,75]");
+            //}           
+            //else if  (valor > 75.00 && valor <= 100.00)
+            //{
+            //    Console.WriteLine("Intervalo (75,100]");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Fora de intervalo");
+            //}
+
+            //-------------------- 1038 - Lanche --------------------------------------
+
+            
+            //string[] num = Console.ReadLine().Split(' ');
+            //int codigo = int.Parse(num[0]),
+            //    qntItem = int.Parse(num[1]);
+            //double preco = 0 ;
+            //if (codigo == 1)
+            //    preco = 4;
+            //else if (codigo == 2)
+            //    preco = 4.5;
+            //else if (codigo == 3)
+            //    preco = 5;
+            //else if (codigo == 4)
+            //    preco = 2;
+            //else if (codigo == 5)
+            //    preco = 1.5;
+           
+            
+            //double total = preco * qntItem;
+
+            //Console.WriteLine($"Total: R$ {total.ToString("N2")}");
+
+            //-------------------- 1040 - Média 3 --------------------------------------
+
+            string[] nota = Console.ReadLine().Split(' ');
+            double N1 = double.Parse(nota[0]),
+                N2 = double.Parse(nota[1]),
+                N3 = double.Parse(nota[2]),
+                N4 = double.Parse(nota[3]);
+
+            double media = (((N1 * 2) + (N2 * 3) + (N3 * 4) + N4) / 10);
+            Console.WriteLine($"Media: {media.ToString("N1")}");
+
+            if (media >= 7.0)
             {
-                Console.WriteLine("Valores nao aceitos");
+                Console.WriteLine("Aluno aprovado.");
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            else if (media >= 5.0 && media <= 6.9)
+            {
+                Console.WriteLine("Aluno em exame.");
+                var notaExame = float.Parse(Console.ReadLine());
+                Console.WriteLine($"Nota do exame: {notaExame.ToString("N1")}");
+                double mediaFinal = (notaExame + media) / 2;
+                if (mediaFinal >= 5.0)
+                {
+                    Console.WriteLine("Aluno aprovado.");
+                    Console.WriteLine($"Media final: {mediaFinal.ToString("N1")}");
+                }
+                else if(mediaFinal >= 4.9)
+                {
+                    Console.WriteLine("Aluno reprovado.");
+                    Console.WriteLine($"Media final: {mediaFinal.ToString("N1")}");
+                }
+            }
+            else if (media < 5.0)
+            {
+                Console.WriteLine("Aluno reprovado.");
+            }
 
 
 
