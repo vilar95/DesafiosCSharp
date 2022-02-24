@@ -346,7 +346,7 @@ namespace DesafiosCSharp
 
             //-------------------- 1038 - Lanche --------------------------------------
 
-            
+
             //string[] num = Console.ReadLine().Split(' ');
             //int codigo = int.Parse(num[0]),
             //    qntItem = int.Parse(num[1]);
@@ -361,50 +361,131 @@ namespace DesafiosCSharp
             //    preco = 2;
             //else if (codigo == 5)
             //    preco = 1.5;
-           
-            
+
+
             //double total = preco * qntItem;
 
             //Console.WriteLine($"Total: R$ {total.ToString("N2")}");
 
             //-------------------- 1040 - Média 3 --------------------------------------
 
-            string[] nota = Console.ReadLine().Split(' ');
-            double N1 = double.Parse(nota[0]),
-                N2 = double.Parse(nota[1]),
-                N3 = double.Parse(nota[2]),
-                N4 = double.Parse(nota[3]);
+            //string[] nota = Console.ReadLine().Split(' ');
+            //double N1 = double.Parse(nota[0]),
+            //       N2 = double.Parse(nota[1]),
+            //       N3 = double.Parse(nota[2]),
+            //       N4 = double.Parse(nota[3]);
 
-            double media = (((N1 * 2) + (N2 * 3) + (N3 * 4) + N4) / 10);
-            Console.WriteLine($"Media: {media.ToString("N1")}");
 
-            if (media >= 7.0)
+            //double media = (((N1 * 2) + (N2 * 3) + (N3 * 4) + N4) / 10);
+            //media = Math.Truncate(10 * media) / 10;
+            //Console.WriteLine($"Media: {media.ToString("N1")}");
+
+            //if (media >= 7.0)
+            //{
+            //    Console.WriteLine("Aluno aprovado.");
+            //}
+            //else if (media >= 5.0 && media <= 6.9)
+            //{
+            //    Console.WriteLine("Aluno em exame.");
+            //    var notaExame = float.Parse(Console.ReadLine());
+            //    Console.WriteLine($"Nota do exame: {notaExame.ToString("N1")}");
+            //    double mediaFinal = (notaExame + media) / 2;
+            //    if (mediaFinal >= 5.0)
+            //    {
+            //        Console.WriteLine("Aluno aprovado.");
+            //        Console.WriteLine($"Media final: {mediaFinal.ToString("N1")}");
+            //    }
+            //    else 
+            //    {
+            //        Console.WriteLine("Aluno reprovado.");
+            //        Console.WriteLine($"Media final: {mediaFinal.ToString("N1")}");
+            //    }
+            //}
+            //else if (media < 5.0)
+            //{
+            //    Console.WriteLine("Aluno reprovado.");
+            //}
+
+            //-------------------- 1041 - Coordenadas de um ponto --------------------------------------
+
+            //string[] input = Console.ReadLine().Split(' ');
+            //float X = float.Parse(input[0]),
+            //      Y = float.Parse(input[1]);
+            //if (X > 0 && Y > 0) { Console.WriteLine("Q1"); }
+            //if (X < 0 && Y > 0) { Console.WriteLine("Q2"); }
+            //if (X < 0 && Y < 0) { Console.WriteLine("Q3"); }
+            //if (X > 0 && Y < 0) { Console.WriteLine("Q4"); }
+            //if (X == 0 && Y == 0) { Console.WriteLine("Origem"); }
+            //if (X == 0 && Y != 0) { Console.WriteLine("Eixo Y"); }
+            //if (X != 0 && Y == 0) { Console.WriteLine("Eixo X"); }
+
+            //-------------------- 1042 - Cort Simples --------------------------------------
+
+
+            //string[] input = Console.ReadLine().Split(' ');
+            //int num1 = int.Parse(input[0]), num2 = int.Parse(input[1]), num3 = int.Parse(input[2]);
+
+            //if (num1 < num2 && num1 < num3 && num2 < num3)
+            //{
+            //    Console.WriteLine(num1); Console.WriteLine(num2); Console.WriteLine(num3);
+            //}
+            //else if (num1 < num2 && num1 < num3 && num2 > num3)
+            //{
+            //    Console.WriteLine(num1); Console.WriteLine(num3); Console.WriteLine(num2);
+            //}
+            //else if (num1 > num2 && num2 < num3 && num1 < num3)
+            //{   
+            //    Console.WriteLine(num2); Console.WriteLine(num1); Console.WriteLine(num3);
+            //}
+            //else if (num1 > num2 && num2 < num3 && num1 > num3)
+            //{
+            //    Console.WriteLine(num2); Console.WriteLine(num3); Console.WriteLine(num1);
+            //}
+            //else if (num1 < num2 && num2 > num3 && num1 > num3)
+            //{
+            //    Console.WriteLine(num3); Console.WriteLine(num1); Console.WriteLine(num2);
+            //}
+            //else if (num1 > num2 && num2 > num3 && num1 > num3)
+            //{
+            //    Console.WriteLine(num3); Console.WriteLine(num2); Console.WriteLine(num1);
+            //}  
+
+            //Console.WriteLine("");Console.WriteLine(num1); Console.WriteLine(num2); Console.WriteLine(num3);
+
+            //-------------------- 1042 - Sort Simples --------------------------------------
+
+
+            //string[] input = Console.ReadLine().Split(' ');
+            //float num1 = float.Parse(input[0]),
+            //      num2 = float.Parse(input[1]),
+            //      num3 = float.Parse(input[2]);
+
+            //if (num1 + num2 > num3 && num3 + num2 > num1 && num1 + num3 > num2)
+            //{
+            //    float perimetro = num1 + num2 + num3;
+            //    Console.WriteLine($"Perimetro = {perimetro.ToString("N1")}");
+            //}
+            //else
+            //{
+            //    float area = ((num1 + num2) * num3) / 2;
+            //    Console.WriteLine($"Area = {area.ToString("N1")}");
+            //}
+
+            //-------------------- 1044 - Múltiplos --------------------------------------
+
+            string[] input = Console.ReadLine().Split(' ');
+            int num1 = int.Parse(input[0]),
+                  num2 = int.Parse(input[1]);
+            
+            
+            if (num2 % num1 == 0 || num1 % num2 == 0)
             {
-                Console.WriteLine("Aluno aprovado.");
+                Console.WriteLine("Sao Multiplos");
             }
-            else if (media >= 5.0 && media <= 6.9)
+            else
             {
-                Console.WriteLine("Aluno em exame.");
-                var notaExame = float.Parse(Console.ReadLine());
-                Console.WriteLine($"Nota do exame: {notaExame.ToString("N1")}");
-                double mediaFinal = (notaExame + media) / 2;
-                if (mediaFinal >= 5.0)
-                {
-                    Console.WriteLine("Aluno aprovado.");
-                    Console.WriteLine($"Media final: {mediaFinal.ToString("N1")}");
-                }
-                else if(mediaFinal >= 4.9)
-                {
-                    Console.WriteLine("Aluno reprovado.");
-                    Console.WriteLine($"Media final: {mediaFinal.ToString("N1")}");
-                }
+                Console.WriteLine("Nao sao Multiplos");
             }
-            else if (media < 5.0)
-            {
-                Console.WriteLine("Aluno reprovado.");
-            }
-
-
 
 
 
