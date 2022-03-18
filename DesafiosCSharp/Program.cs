@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DesafiosCSharp
+{
+    internal class Program
     {
-        internal class Program
+        static void Main(string[] args)
         {
-            static void Main(string[] args)
-            {
             //---------------------- 1001 - Extremamente Básico -----------------------
 
             //int A = Int32.Parse(System.Console.ReadLine().Trim());
@@ -473,26 +473,53 @@ namespace DesafiosCSharp
 
             //-------------------- 1044 - Múltiplos --------------------------------------
 
-            string[] input = Console.ReadLine().Split(' ');
-            int num1 = int.Parse(input[0]),
-                  num2 = int.Parse(input[1]);
-            
-            
-            if (num2 % num1 == 0 || num1 % num2 == 0)
-            {
-                Console.WriteLine("Sao Multiplos");
-            }
-            else
-            {
-                Console.WriteLine("Nao sao Multiplos");
-            }
+            //string[] input = Console.ReadLine().Split(' ');
+            //int num1 = int.Parse(input[0]),
+            //      num2 = int.Parse(input[1]);
 
 
+            //if (num2 % num1 == 0 || num1 % num2 == 0)
+            //{
+            //    Console.WriteLine("Sao Multiplos");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Nao sao Multiplos");
+            //}
+
+            //-------------------- 1.1 - Algoritomos e Lógica de programação --------------------------------------
+
+            var item = Console.ReadLine().Split(' ');
+            int M1 = int.Parse(item[0]);
+            int M2 = int.Parse(item[1]);
+            int M3 = int.Parse(item[2]);
+            int M4 = int.Parse(item[3]);
+            int M5 = int.Parse(item[4]);
+
+            if(M1 == M2 && M3 == M4)
+            {
+                Console.WriteLine("Moeda 5 é a falsa");
+            }
+            if(M2 == M3 && M4 == M5)
+            {
+                Console.WriteLine("Moeda 1 é a falsa");
+            }
+            if(M3 == M4 && M5 == M1)
+            {
+                Console.WriteLine("Moeda 2 é a falsa");
+            }
+            if(M4 == M5 && M1 == M2)
+            {
+                Console.WriteLine("Moeda 3 é a falsa");
+            }
+            if(M5 == M1 && M2 == M3) {
+                Console.WriteLine("Moeda 4 é a falsa");
+            }
 
             Console.ReadLine();
-            }
         }
     }
+}
 
 
 
