@@ -489,32 +489,148 @@ namespace DesafiosCSharp
 
             //-------------------- 1.1 - Algoritomos e Lógica de programação --------------------------------------
 
-            var item = Console.ReadLine().Split(' ');
-            int M1 = int.Parse(item[0]);
-            int M2 = int.Parse(item[1]);
-            int M3 = int.Parse(item[2]);
-            int M4 = int.Parse(item[3]);
-            int M5 = int.Parse(item[4]);
+            //var item = Console.ReadLine().Split(' ');
+            //int M1 = int.Parse(item[0]);
+            //int M2 = int.Parse(item[1]);
+            //int M3 = int.Parse(item[2]);
+            //int M4 = int.Parse(item[3]);
+            //int M5 = int.Parse(item[4]);
 
-            if(M1 == M2 && M3 == M4)
-            {
-                Console.WriteLine("Moeda 5 é a falsa");
-            }
-            if(M2 == M3 && M4 == M5)
-            {
-                Console.WriteLine("Moeda 1 é a falsa");
-            }
-            if(M3 == M4 && M5 == M1)
-            {
-                Console.WriteLine("Moeda 2 é a falsa");
-            }
-            if(M4 == M5 && M1 == M2)
-            {
-                Console.WriteLine("Moeda 3 é a falsa");
-            }
-            if(M5 == M1 && M2 == M3) {
-                Console.WriteLine("Moeda 4 é a falsa");
-            }
+            //if(M1 == M2 && M3 == M4)
+            //{
+            //    Console.WriteLine("Moeda 5 é a falsa");
+            //}
+            //if(M2 == M3 && M4 == M5)
+            //{
+            //    Console.WriteLine("Moeda 1 é a falsa");
+            //}
+            //if(M3 == M4 && M5 == M1)
+            //{
+            //    Console.WriteLine("Moeda 2 é a falsa");
+            //}
+            //if(M4 == M5 && M1 == M2)
+            //{
+            //    Console.WriteLine("Moeda 3 é a falsa");
+            //}
+            //if(M5 == M1 && M2 == M3) {
+            //    Console.WriteLine("Moeda 4 é a falsa");
+            //}
+
+            //var item = Console.ReadLine().Split(' ');
+            //int M1 = int.Parse(item[0]);
+            //int M2 = int.Parse(item[1]);
+            //int M3 = int.Parse(item[2]);
+            //int M4 = int.Parse(item[3]);
+            //int M5 = int.Parse(item[4]);
+
+            //if(M1 != M2)
+            //{
+            //    if (M1 < M2)
+            //    {
+            //        Console.WriteLine("Moeda falsa é a 1.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Moeda falsa é a 2."); 
+            //    }
+            //}
+            //else 
+            //{
+            //    if (M3 == M4)
+            //    {
+            //        Console.WriteLine("Moeda falsa é a 5.");
+            //    }
+            //    else if (M3 > M4)
+            //    {
+            //        Console.WriteLine("Moeda falsa é a 4.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Moeda falsa é a 3.");
+            //    }
+
+            //if (M3 < M4)
+            //{
+            //    Console.WriteLine("Moeda falsa é a 3.");
+            //}
+            //else if (M3 > M4)
+            //{
+            //    Console.WriteLine("Moeda falsa é a 4.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Moeda falsa é a 5.");
+            //}
+
+            //}
+
+            //-------------------- 1.3 - Algoritomos e Lógica de programação --------------------------------------
+
+            //var item = Console.ReadLine().Split(' ');
+            //int M1 = int.Parse(item[0]);
+            //int M2 = int.Parse(item[1]);
+            //int M3 = int.Parse(item[2]);
+            //int M4 = int.Parse(item[3]);
+            //int M5 = int.Parse(item[4]);
+            //int M6 = int.Parse(item[5]);
+            //int M7 = int.Parse(item[6]);
+            //int M8 = int.Parse(item[7]);
+            //int M9 = int.Parse(item[8]);
+
+            //if (M1 != M2)
+            //{
+            //    if (M1 < M2)
+            //    {
+            //        Console.WriteLine("Moeda 1 é a falsa.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Moeda 2 é a falsa.");
+            //    }
+            //}
+            //if (M3 != M4)
+            //{
+
+            //    if (M3 < M4)
+            //    {
+            //        Console.WriteLine("Moeda 3 é a falsa.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Moeda 4 é a falsa.");
+            //    }
+            //}
+            //if (M5 != M6)
+            //{
+            //    if (M5 < M6)
+            //    {
+            //        Console.WriteLine("Moeda 5 é a falsa.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Moeda 6 é a falsa.");
+            //    }
+            //}
+            //else
+            //{
+            //    if (M7 == M8)
+            //    {
+            //        Console.WriteLine("Moeda 9 é a falsa.");
+            //    }
+            //    else if (M7 > M8)
+            //    {
+            //        Console.WriteLine("Moeda 8 é a falsa.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Moeda 7 é a falsa.");
+            //    }
+            //}
+
+
+            //-------------------- 1.4 - Algoritomos e Lógica de programação --------------------------------------
+
+        
 
             Console.ReadLine();
         }
